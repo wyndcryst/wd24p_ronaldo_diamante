@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/page.global.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="../../images/icons/navbar.png" />
+    <title>JAMS Login</title>
+</head>
+
+<body>
+    <!-- Login form card start -->
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="card shadow-lg border-0">
+            <div class="card-body">
+                <form onsubmit="return login()" class="w-450 p-3">
+                    <div class="card-title text-center my-3">
+                        <h2>
+                            Login to <a class="text-decoration-none" href="../../">JAMS</a>
+                        </h2>
+                        <p>Login with your email and password.</p>
+                    </div>
+                    <div class="form-floating my-3">
+                        <input type="text" class="form-control shadow-sm border-0" id="username" placeholder="Username" />
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                        <input type="password" class="form-control shadow-sm border-0" id="password" placeholder="Password" />
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-dark mt-3">Login</button>
+                    </div>
+                    <br />
+                    <p class="text-center">
+                        Don't have an account? <a class="text-decoration-none font-monospace fw-semibold" href="../signup/"> Register here.</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Login form card ends -->
+
+    <!-- jQuery CDN -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+
+    <!-- Start of Bootstrap scripts -->
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <!-- End of Bootstrap scripts -->
+
+    <script src="script.js"></script>
+    <script src="../../js/logout.js"></script>
+</body>
+
+</html>

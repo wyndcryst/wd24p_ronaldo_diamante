@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.min.css" />
+    <title>Jam's Wanderlust / About</title>
+    <link rel="stylesheet" href="styles/about.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-md navbar-dark bg-success bg-gradient"
+      id="top-of-site"
+    >
+      <div class="container-lg">
+        <a class="navbar-brand fw-semibold" href="/index.html">
+          <img
+            src="/assets/images/navbar-image.png"
+            alt="Logo"
+            width="25"
+            height="25"
+            class="d-inline-block align-text-top"
+          />
+          Jam's Wanderlust
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="attractions.html">Attractions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="delicacies.html">Delicacies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <!-- trigger for contact modal -->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="offcanvas"
+                href="#offcanvasDark"
+                aria-controls="offcanvasExample"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Offcanvas contact starts here -->
+    <div
+      class="offcanvas offcanvas-start text-bg-dark"
+      tabindex="-1"
+      id="offcanvasDark"
+      aria-labelledby="offcanvasDarkLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkLabel">
+          <a class="navbar-brand fw-semibold" href="/index.html">
+            <img
+              src="/assets/images/navbar-image.png"
+              alt="Logo"
+              width="25"
+              height="25"
+              class="d-inline-block align-text-top"
+            />
+            Jam's Wanderlust
+          </a>
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <!-- Offcanvas body -->
+      <div class="offcanvas-body">
+        <section id="contact">
+          <div class="container">
+            <div class="text-center">
+              <h1>Contact Me</h1>
+              <p class="lead">
+                Please contact me if you have any comments, suggestions, or
+                feedbacks.
+              </p>
+            </div>
+
+            <div class="align-content-center">
+              <div class="text-center pb-4">
+                <form>
+                  <div class="form-floating pb-2">
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control"
+                      placeholder="name"
+                      required
+                    />
+                    <label for="name" class="form-label">Enter your name</label>
+                  </div>
+
+                  <div class="form-floating pb-2">
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="email"
+                      required
+                    />
+                    <label for="email" class="form-label"
+                      >Enter your email</label
+                    >
+                  </div>
+
+                  <div class="form-floating pb-2">
+                    <textarea
+                      name="message"
+                      id="message"
+                      class="form-control"
+                      placeholder="message"
+                      required
+                    ></textarea>
+                    <label for="message" class="form-label"
+                      >Enter your message</label
+                    >
+                  </div>
+                  <button class="btn btn-sm btn-primary" type="submit">
+                    Submit
+                  </button>
+                </form>
+              </div>
+
+              <div>
+                <div class="pb-3">
+                  <h4>My Email</h4>
+                  <a
+                    class="btn btn-outline-primary"
+                    href="mailto:wyndcryst@disroot.org"
+                    >wyndcryst@disroot.org</a
+                  >
+                </div>
+                <div class="pb-3">
+                  <h4>My Address</h4>
+                  <a
+                    class="btn btn-outline-primary"
+                    href="https://goo.gl/maps/aWR7WY5GTtUrZwQU8"
+                    target="_blank"
+                    >Iloilo, Western Visayas, Philippines</a
+                  >
+                </div>
+
+                <div>
+                  <h4>My Social Network</h4>
+                  <div id="social">
+                    <div class="row text-end justify-content-start ps-4">
+                      <div class="col-2">
+                        <a
+                          class="btn btn-outline-primary btn-sm"
+                          href="https://github.com/wyndcryst"
+                          target="_blank"
+                        >
+                          <img
+                            src="/assets/images/github-white.png"
+                            alt="GitHub"
+                          />
+                        </a>
+                      </div>
+                      <div class="col-2">
+                        <a
+                          class="btn btn-outline-primary btn-sm"
+                          href="https://www.linkedin.com/in/ronaldo-diamante-701552170/"
+                          target="_blank"
+                        >
+                          <img
+                            src="/assets/images/linkedin-white.png"
+                            alt="LinkedIn"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Offcanvas contact ends here -->
+
+    <section class="container-md text-center pt-5" id="article">
+      <h1 class="pb-3 text-success">About Panay Island</h1>
+      <p class="lead">
+        For most visitors to the Philippines, Panay is the island they land on
+        in order to get to the famous White Beach on Boracay. But what does
+        Panay have to offer? Think of it as distinct provinces, as the locals
+        do. In the northwest, <strong>Aklan Province</strong> (which includes
+        Boracay) is best known for hosting the amazing Ati-Atihan Festival in
+        its capital, Kalibo. Northeast, <strong>Capiz Province</strong>, has
+        long been known for the fishponds dotting its capital, Roxas, and for
+        the seafood on nearby Baybay Beach. <strong>Antique</strong>, on the
+        west coast, is the least developed province, making exploration doubly
+        interesting; ecotourism is taking hold among its lovely mountains and
+        crystal-clear rivers. <strong>Iloilo Province</strong>, to the east, has
+        the most sophisticated city on Panay, and also the nearby island of
+        Guimaras, with aquamarine waters and mango farms. All this can be
+        stitched together by circumnavigating Panay on its excellent road
+        network.
+      </p>
+
+      <hr />
+      <!-- <div class="dropdown-center">
+        <button
+          class="btn btn-success dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Select a Province to learn more
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a
+              class="dropdown-item"
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Aklan"
+              >Aklan</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item"
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Antique_(province)"
+              >Antique</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item"
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Capiz"
+              >Capiz</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item"
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Iloilo"
+              >Iloilo</a
+            >
+          </li>
+        </ul>
+      </div> -->
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              More about Aklan Province
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Aklan</strong>, officially the
+              <strong>Province of Aklan</strong> (Akeanon: Probinsya it Akean
+              [ak'ɣan]; Hiligaynon: Kapuoran sang Aklan; Tagalog: Lalawigan ng
+              Aklan), is a province in the Western Visayas region of the
+              Philippines. Its capital is Kalibo. The province is situated in
+              the northwest portion of Panay Island, bordering Antique to the
+              southwest, and Capiz to the southeast. Aklan faces the Sibuyan Sea
+              and Romblon province to the north. <br />
+              <br />
+              Aklan is most well-known for Boracay, a resort island 0.8
+              kilometer north of the tip of Panay. It is known for its white
+              sand beaches and is considered one of the more prominent
+              destinations in the country. The Ati-Atihan Festival of Kalibo has
+              also been known worldwide, hence declared "The Mother of all
+              Philippine Festivals." It is an annual celebration held on the
+              third Sunday of January to honor the Sto. Niño (Infant Jesus). The
+              festival showcases tribal dancing through the town’s main streets
+              to the tune of ethnic music, with participants in indigenous
+              costumes and gear.
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              More about Antique Province
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Antique</strong> officially the
+              <strong>Province of Antique</strong>
+              ([ɐnˈtike]; Kinaray-a: Kapuoran kang Antique; Hiligaynon: Kapuoran
+              sang Antique; Tagalog: Lalawigan ng Antique), is a province in the
+              Philippines located in the Western Visayas region. Its capital is
+              San Jose de Buenavista, the most populous town in Antique. The
+              province is situated in the western section of Panay Island and
+              borders Aklan, Capiz and Iloilo to the east, while facing the Sulu
+              Sea to the west. Antique Provincial Capitol Building in San Jose
+              de Buenavista. <br />
+              <br />
+              The province is home to the indigenous Iraynun-Bukidnon, speakers
+              of a dialect of the Kinaray-a language, who have crafted the only
+              rice terrace clusters in the Visayas through indigenous knowledge
+              and sheer vernacular capabilities. The rice terraces of the
+              Iraynun-Bukidnon are divided into four terraced fields, namely,
+              General Fullon rice terraces, Lublub rice terraces, Bakiang rice
+              terraces, and San Agustin rice terraces. All of the rice terrace
+              clusters have been researched by the National Commission for
+              Culture and the Arts and various scholars from the University of
+              the Philippines. There have been campaigns to nominate the
+              Iraynun-Bukidnon Rice Terraces, along with the Central Panay
+              Mountain Range, into the UNESCO World Heritage List.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              More about Capiz Province
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Capiz</strong>, officially the
+              <strong>Province of Capiz</strong> (Capiznon/Hiligaynon: Kapuoran
+              sang Capiz; Tagalog: Lalawigan ng Capiz), is a province in the
+              Philippines located in the central section of Western Visayas
+              region. Its capital is the city of Roxas. It is located at the
+              northeastern portion of Panay Island, bordering Aklan to the
+              north, Antique to the west, and Iloilo to the south. Capiz faces
+              the Sibuyan Sea to the north. <br />
+              <br />
+              Capiz is known for the Placuna placenta oyster shell that has the
+              same name locally and is used for decoration and making
+              lampshades, trays, window and doors. Likewise, the province is
+              known as the "Seafood Capital of the Philippines"[3] and was among
+              the top 15 most frequently visited places in the Philippines.[4]
+              Capiz is the site of the famous coral-stone Santa Monica Church in
+              the town of Panay, home to the largest Catholic Church bell in
+              Asia. The bell was made from 70 sacks of gold and silver coins
+              donated by the townsfolk. Measuring seven feet in diameter, five
+              feet in height and weighing 10,400 kilograms or just over 10
+              metric tons, the Pan-ay bell is popular among tourists visiting
+              Capiz.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              More about Iloilo Province
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Iloilo</strong> ([ɪlo.ˈilo]), officially the
+              <strong>Province of Iloilo</strong> (Hiligaynon: Kapuoran sang
+              Iloilo; Kinaray-a: Kapuoran kang Iloilo; Tagalog: Lalawigan ng
+              Iloilo), is a province in the Philippines located in the Western
+              Visayas region. Its capital is the City of Iloilo, the regional
+              center of Western Visayas. Iloilo occupies a major southeast
+              portion of the Visayan island of Panay and is bordered by the
+              province of Antique to the west, Capiz to the north, the Jintotolo
+              Channel to the northeast, the Guimaras Strait to the east, and the
+              Iloilo Strait and Panay Gulf to the southwest. <br />
+              <br />
+              Just off Iloilo's southeast coast is the island province of
+              Guimaras, once part of Iloilo but now an independent province.
+              Across the Panay Gulf and Guimaras Strait is Negros Occidental,
+              occupying the northwestern half of the larger island of Negros.
+              Iloilo City, its capital, is the center of the Iloilo–Guimaras
+              Metropolitan Area or Metro Iloilo–Guimaras, and is geographically
+              located in the province and is grouped under the province by the
+              Philippine Statistics Authority but remains politically
+              independent from the provincial government. According to the 2020
+              census, the population of the province (excluding Iloilo City) is
+              2,051,899. If Iloilo City is included, the population is 2,509,525
+              in total. <br />
+              <br />
+              Iloilo is renowned for its rich history and culture, which has
+              resulted in the preservation of numerous old Spanish-era historic
+              sites, including the Miag-ao Church, a UNESCO World Heritage Site
+              in the Philippines, and San Joaquin Campo Santo, which, along with
+              San Joaquin Church and Santa Barbara Church, has been recognized
+              as a National Cultural Treasure by the National Museum of the
+              Philippines. The northern portion of the province is noted for its
+              white sand beaches and crystal clear waters, namely the Bantigue
+              Sand Bar, the Tangke Lagoon, Cabugao Island, and Antonia Island,
+              which are all part of the Islas de Gigantes. Sicogon Island,
+              located to the south of the group of islands, is also a tourist
+              island destination in the province that is slowly regaining its
+              popularity after the stalled development caused by martial law in
+              the 1970s.
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </section>
+
+    <div class="container text-center">
+      <img
+        src="assets/images/panay-island.jpg"
+        class="img-fluid img-thumbnail"
+        alt="Panay Island"
+      />
+    </div>
+
+    <footer>
+      <div class="container text-success text-center pt-5">
+        <hr />
+        <!-- Back to Top -->
+        <a href="#top-of-site" class="top-of-site-link" data-visible="true">
+          <!-- <span class="screen-reader-text">Back to Top</span> -->
+          <svg width="32" height="32" viewBox="0 0 100 100">
+            <path
+              fill="white"
+              d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"
+              data-darkreader-inline-fill=""
+              style="--darkreader-inline-fill: #e8e6e3"
+            ></path>
+          </svg>
+        </a>
+
+        <p class="p-4">© Ronaldo Diamante 2022</p>
+      </div>
+    </footer>
+
+    <script src="/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

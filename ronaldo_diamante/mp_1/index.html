@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.min.css" />
+    <title>Jam's Wanderlust</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <!-- navbar-expand-md = this will expand on md breakpoint -->
+      <div class="container-lg">
+        <!-- brand -->
+        <a class="navbar-brand fw-semibold" href="#intro">
+          <img
+            src="/assets/images/navbar-image.png"
+            alt="Logo"
+            width="25"
+            height="25"
+            class="d-inline-block align-text-top"
+          />
+          Jam's Wanderlust
+        </a>
+
+        <!-- toggle button for mobile nav -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="attractions.html">Attractions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="delicacies.html">Delicacies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="intro">
+      <div class="container-fluid text-center">
+        <div class="justify-content-center align-items-center">
+          <div class="row">
+            <div class="col d-none d-lg-inline"></div>
+            <div class="col" id="introduction">
+              <h1 class="fw-semibold">Roaming Panay Island</h1>
+              <p class="lead fw-semibold">
+                Exploring Panay Island's beauty and its hidden gems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="text-center text-light mb-5">
+          <h2 class="display-6">Contact Me</h2>
+          <p class="lead">
+            Please contact me if you have any comments, suggestions, or
+            feedbacks.
+          </p>
+        </div>
+
+        <div class="row align-content-center">
+          <div class="col-md-6 text-center">
+            <form>
+              <div class="form-floating pb-2">
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="name"
+                  required
+                />
+                <label for="name" class="form-label">Enter your name</label>
+              </div>
+
+              <div class="form-floating pb-2">
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="email"
+                  required
+                />
+                <label for="email" class="form-label">Enter your email</label>
+              </div>
+
+              <div class="form-floating pb-2">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  placeholder="message"
+                  required
+                ></textarea>
+                <label for="message" class="form-label"
+                  >Enter your message</label
+                >
+              </div>
+              <button
+                class="btn btn-primary d-md-flex justify-content-md-start"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+
+          <div class="col-md-6">
+            <div class="pb-3">
+              <h4>My Email</h4>
+              <a
+                class="btn btn-outline-primary"
+                href="mailto:wyndcryst@disroot.org"
+                >wyndcryst@disroot.org</a
+              >
+            </div>
+            <div class="pb-3">
+              <h4>My Address</h4>
+              <a
+                class="btn btn-outline-primary"
+                href="https://goo.gl/maps/aWR7WY5GTtUrZwQU8"
+                target="_blank"
+                >Iloilo, Western Visayas, Philippines</a
+              >
+            </div>
+
+            <div>
+              <h4>My Social Network</h4>
+              <div id="social">
+                <div class="row text-end justify-content-start ps-4">
+                  <div class="col-2">
+                    <a
+                      class="btn btn-outline-primary btn-sm"
+                      href="https://github.com/wyndcryst"
+                      target="_blank"
+                    >
+                      <img src="/assets/images/github-white.png" alt="GitHub" />
+                    </a>
+                  </div>
+                  <div class="col-2">
+                    <a
+                      class="btn btn-outline-primary btn-sm"
+                      href="https://www.linkedin.com/in/ronaldo-diamante-701552170/"
+                      target="_blank"
+                    >
+                      <img
+                        src="/assets/images/linkedin-white.png"
+                        alt="LinkedIn"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container text-light text-center py-3">
+        <hr />
+        <!-- Back to Top -->
+        <a href="#intro">
+          <svg width="32" height="32" viewBox="0 0 100 100">
+            <path
+              fill="white"
+              d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"
+              data-darkreader-inline-fill=""
+              style="--darkreader-inline-fill: #e8e6e3"
+            ></path>
+          </svg>
+        </a>
+
+        <p class="pt-4">© Ronaldo Diamante 2022</p>
+      </div>
+    </footer>
+
+    <script src="/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

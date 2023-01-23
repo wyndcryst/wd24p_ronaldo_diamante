@@ -1,0 +1,57 @@
+body {
+  background: linear-gradient(340deg, rgb(165, 255, 206), rgb(244, 255, 241));
+}
+
+.navbar a {
+  color: white;
+}
+
+#article p,
+.accordion-body {
+  text-align: justify;
+}
+
+.accordion button {
+  color: rgb(0, 92, 61);
+  font-weight: bold;
+  background-color: rgb(237, 255, 237);
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  color: rgb(0, 92, 61);
+  font-weight: normal;
+  background-color: rgb(197, 255, 185);
+}
+
+/* Contact */
+#contact h2 {
+  font-weight: 500;
+}
+
+#contact label {
+  color: rgb(255, 255, 255);
+}
+
+#contact input,
+#contact textarea {
+  background-color: rgb(28, 30, 31);
+}
+
+#contact textarea {
+  height: 6rem;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  background-color: rgb(82, 82, 82);
+  color: rgb(255, 255, 255);
+}
+
+#contact h4 {
+  color: rgb(255, 255, 255);
+}
+
+#social img {
+  width: 2rem;
+}

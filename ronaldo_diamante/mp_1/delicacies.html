@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.min.css" />
+    <title>Jam's Wanderlust / Delicacies</title>
+    <link rel="stylesheet" href="styles/delicacies.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-md navbar-dark bg-danger bg-gradient"
+      id="top-of-site"
+    >
+      <div class="container-lg">
+        <a class="navbar-brand fw-semibold" href="/index.html">
+          <img
+            src="/assets/images/navbar-image.png"
+            alt="Logo"
+            width="25"
+            height="25"
+            class="d-inline-block align-text-top"
+          />
+          Jam's Wanderlust
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="attractions.html">Attractions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="delicacies.html">Delicacies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <!-- trigger for contact modal -->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="offcanvas"
+                href="#offcanvasDark"
+                aria-controls="offcanvasExample"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Offcanvas contact starts here -->
+    <div
+      class="offcanvas offcanvas-start text-bg-dark"
+      tabindex="-1"
+      id="offcanvasDark"
+      aria-labelledby="offcanvasDarkLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkLabel">
+          <a class="navbar-brand fw-semibold" href="/index.html">
+            <img
+              src="/assets/images/navbar-image.png"
+              alt="Logo"
+              width="25"
+              height="25"
+              class="d-inline-block align-text-top"
+            />
+            Jam's Wanderlust
+          </a>
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <!-- Offcanvas body -->
+      <div class="offcanvas-body">
+        <section id="contact">
+          <div class="container">
+            <div class="text-center">
+              <h1>Contact Me</h1>
+              <p class="lead">
+                Please contact me if you have any comments, suggestions, or
+                feedbacks.
+              </p>
+            </div>
+
+            <div class="align-content-center">
+              <div class="text-center pb-4">
+                <form>
+                  <div class="form-floating pb-2">
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control"
+                      placeholder="name"
+                      required
+                    />
+                    <label for="name" class="form-label">Enter your name</label>
+                  </div>
+
+                  <div class="form-floating pb-2">
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="email"
+                      required
+                    />
+                    <label for="email" class="form-label"
+                      >Enter your email</label
+                    >
+                  </div>
+
+                  <div class="form-floating pb-2">
+                    <textarea
+                      name="message"
+                      id="message"
+                      class="form-control"
+                      placeholder="message"
+                      required
+                    ></textarea>
+                    <label for="message" class="form-label"
+                      >Enter your message</label
+                    >
+                  </div>
+                  <button class="btn btn-sm btn-primary" type="submit">
+                    Submit
+                  </button>
+                </form>
+              </div>
+
+              <div>
+                <div class="pb-3">
+                  <h4>My Email</h4>
+                  <a
+                    class="btn btn-outline-primary"
+                    href="mailto:wyndcryst@disroot.org"
+                    >wyndcryst@disroot.org</a
+                  >
+                </div>
+                <div class="pb-3">
+                  <h4>My Address</h4>
+                  <a
+                    class="btn btn-outline-primary"
+                    href="https://goo.gl/maps/aWR7WY5GTtUrZwQU8"
+                    target="_blank"
+                    >Iloilo, Western Visayas, Philippines</a
+                  >
+                </div>
+
+                <div>
+                  <h4>My Social Network</h4>
+                  <div id="social">
+                    <div class="row text-end justify-content-start ps-4">
+                      <div class="col-2">
+                        <a
+                          class="btn btn-outline-primary btn-sm"
+                          href="https://github.com/wyndcryst"
+                          target="_blank"
+                        >
+                          <img
+                            src="/assets/images/github-white.png"
+                            alt="GitHub"
+                          />
+                        </a>
+                      </div>
+                      <div class="col-2">
+                        <a
+                          class="btn btn-outline-primary btn-sm"
+                          href="https://www.linkedin.com/in/ronaldo-diamante-701552170/"
+                          target="_blank"
+                        >
+                          <img
+                            src="/assets/images/linkedin-white.png"
+                            alt="LinkedIn"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Offcanvas contact ends here -->
+
+    <section class="container mt-5">
+      <h2 class="text-center text-light">Delicacies</h2>
+      <p class="lead text-light">
+        Ilonggos, Antiqueos, Akeanons, and Capiznons enjoy the following
+        delicacies to share with their families and love ones.
+      </p>
+    </section>
+
+    <section class="container pt-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Batchoy Card -->
+        <div class="col">
+          <div class="card h-100 text-bg-danger border-light">
+            <img
+              src="assets/images/delicacies/batchoy.jpg"
+              class="card-img-top"
+              alt="Card Image"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">La Paz Special Batchoy</h5>
+              <p class="card-text">
+                Batchoy, less commonly spelled batsoy, is ...
+              </p>
+
+              <!-- Modal trigger part -->
+              <button
+                type="button"
+                class="btn btn-outline-light mt-auto align-self-start"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdropBatchoy"
+              >
+                More...
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdropBatchoy"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                  <div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+
+                    <div class="card text-bg-danger h-100 border-light">
+                      <img
+                        src="assets/images/delicacies/batchoy.jpg"
+                        class="card-img-top"
+                        alt="Card Image"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">La Paz Special Batchoy</h5>
+                        <p class="card-text">
+                          Batchoy, less commonly spelled batsoy, is a noodle
+                          soup made with pork offal, crushed pork cracklings,
+                          chicken stock, beef loin and round noodles. Its
+                          origins can be traced to the district of La Paz,
+                          Iloilo City in the Philippines, hence it is often
+                          referred to as La Paz Batchoy. <br />
+                          Inggo's Batchoy opened his Batchoy stall in 1922 and
+                          rumored to be the real first batchoy shop in La Paz,
+                          Iloilo City, 16 years Ahead than Deco's La Paz Batchoy
+                          Shop, which opened in 1938 The dish was concocted by
+                          Federico Guilergan Sr. in 1938 in Iloilo His recipe
+                          called for a mixture of broth, noodles, beef and pork.
+                          The soup later evolved into its present form which has
+                          become Iloilo City's most popular dish. Federico
+                          Guillergan, Jr., the son of the soup's inventor,
+                          states that his father at first jokingly called the
+                          dish "bats" when asked for its name. Later, he added
+                          "choy", from the vegetable dish chop suey.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sauteed Mongo Card -->
+        <div class="col">
+          <div class="card h-100 text-bg-danger border-light">
+            <img
+              src="assets/images/delicacies/sauteed-monggo-sprouts.jpg"
+              class="card-img-top"
+              alt="Card image"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Sauteed Monggo Sprouts, Chayote, Malunggay, Squash with Shrimps
+              </h5>
+              <p class="card-text">Ginisang monggo is a very...</p>
+
+              <!-- Modal trigger part -->
+              <button
+                type="button"
+                class="btn btn-outline-light mt-auto align-self-start"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdropSauteed"
+              >
+                More...
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdropSauteed"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                  <div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+
+                    <div class="card text-bg-danger h-100 border-light">
+                      <img
+                        src="assets/images/delicacies/sauteed-monggo-sprouts.jpg"
+                        class="card-img-top"
+                        alt="Card Image"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">
+                          Sauteed Monggo Sprouts, Chayote, Malunggay, Squash
+                          with Shrimps
+                        </h5>
+                        <p class="card-text">
+                          Ginisang monggo is a very versatile bean viand that
+                          you can easily try. Cook it with shrimp and malunggay
+                          leaves. Or try the fried pork liempo sliced into cubes
+                          (bagnet Vigan style) with “talbos ng ampalaya”
+                          (ampalaya sprouts) or you can put thinly sliced
+                          ampalaya. Or better yet, combine shrimp and pork just
+                          like in this recipe then top it off with crushed
+                          chicharon!! You can also try bagoong balayan (fish
+                          bagoong) as an alternative to patis (fish sauce) for a
+                          richer flavor.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pancit Molo Card -->
+        <div class="col">
+          <div class="card h-100 text-bg-danger border-light">
+            <img
+              src="assets/images/delicacies/pancit-molo.jpg"
+              class="card-img-top"
+              alt="Card image"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Pancit Molo</h5>
+              <p class="card-text">
+                Pancit Molo or Filipino pork dumpling soup is...
+              </p>
+
+              <!-- Modal trigger part -->
+              <button
+                type="button"
+                class="btn btn-outline-light mt-auto align-self-start"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdropPancit"
+              >
+                More...
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdropPancit"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                  <div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+
+                    <div class="card text-bg-danger h-100 border-light">
+                      <img
+                        src="assets/images/delicacies/pancit-molo.jpg"
+                        class="card-img-top"
+                        alt="Card Image"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pancit Molo</h5>
+                        <p class="card-text">
+                          Pancit Molo or Filipino pork dumpling soup is a type
+                          of soup using wonton wrappers which originated from
+                          Molo district in Iloilo City. It consists of a mixture
+                          of ground pork wrapped in molo or wonton wrapper,
+                          shredded chicken meat, and also shrimps. The
+                          piping-hot soup is often ladled into serving bowls,
+                          and garnished with green onions and fried garlic bits
+                          for another layer of flavor. Pancit, which loosely
+                          translates to "noodle" is a common cuisine in the
+                          Philippines.[3] The "noodle" acting in this dish comes
+                          from the wonton wrappers added to this dish, which
+                          draws from Chinese cuisine.[3] Under this influence,
+                          the wontons within the soup have been compared to
+                          "siomai dumplings." <br />
+                          Pancit Molo is a popular dish and street food in the
+                          region Molo, Iloilo. Iloilo, sometimes called the
+                          "food haven of the Philippines" is renowned for this
+                          soup, as well as another called La Paz Batchoy.[5] One
+                          travel guide has dubbed the soup a “must-eat”.[6]
+                          Former Philippine President Benigno Aquino III, in a
+                          2011 visit to the city, said in a translated quote
+                          that the soup is “delicious.”[7] The soup itself, as
+                          well, has served as a booster for tourism in the
+                          area.[8]
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seafoods Card -->
+        <div class="col">
+          <div class="card h-100 text-bg-danger border-light">
+            <img
+              src="assets/images/delicacies/seafoods.jpg"
+              class="card-img-top"
+              alt="Card image"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Seafoods - Baybay, Roxas City, Capiz</h5>
+              <p class="card-text">At Roxas City, the seafood...</p>
+
+              <!-- Modal trigger part -->
+              <button
+                type="button"
+                class="btn btn-outline-light mt-auto align-self-start"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdropSeafoods"
+              >
+                More...
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdropSeafoods"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                  <div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+
+                    <div class="card text-bg-danger h-100 border-light">
+                      <img
+                        src="assets/images/delicacies/seafoods.jpg"
+                        class="card-img-top"
+                        alt="Card Image"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">
+                          Seafoods - Baybay, Roxas City, Capiz
+                        </h5>
+                        <p class="card-text">
+                          At Roxas City, the seafood capital of the Philippines,
+                          you don't have to limit yourself to just one - the
+                          Capiz gem is ready to offer all of the above and more!
+                          <br />
+                          For a filling meal, choose from their selection of
+                          managat, sapsap, and bangus - among others - and ask
+                          it to be cooked sinigang style for a scrumptious soup,
+                          then pick out a few stuffed squids and a slice of blue
+                          marlin belly for them to grill. Why not also add a
+                          bucket of fresh oysters for good measure? Don't forget
+                          about the extra rice.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ramboy's Card -->
+        <div class="col">
+          <div class="card h-100 text-bg-danger border-light">
+            <img
+              src="assets/images/delicacies/ramboys.jpg"
+              d
+              class="card-img-top"
+              alt="Card image"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Ramboy's - Aklan's Best Chicken & Liempo
+              </h5>
+              <p class="card-text">Ramboy's is no longer foreign...</p>
+
+              <!-- Modal trigger part -->
+              <button
+                type="button"
+                class="btn btn-outline-light mt-auto align-self-start"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdropRamboys"
+              >
+                More...
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdropRamboys"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                  <div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+
+                    <div class="card text-bg-danger h-100 border-light">
+                      <img
+                        src="assets/images/delicacies/ramboys.jpg"
+                        class="card-img-top"
+                        alt="Card Image"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">
+                          Ramboy's - Aklan Best Chicken & Liempo
+                        </h5>
+                        <p class="card-text">
+                          Ramboy's is no longer foreign to the Ilonggo palate –
+                          by far, it is already a household name. With over
+                          eighteen branches nationwide – one in Aklan, three in
+                          Iloilo, two in Manila, one in Roxas, and eleven lechon
+                          houses distributed in the country – the business is
+                          taking over the prime spot for authentic liempo and
+                          lechon manok. <br />
+                          Liempo is a hardcore Filipino favorite. Spelled
+                          liyempo in traditional Tagalog orthography – and
+                          commonly spelled as liempo – is actually a boneless
+                          cut of fatty meat from the belly of a pig. Grilled and
+                          seasoned with spices, liempo is a beloved Filipino
+                          dish best served with rice.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JD BakeryCafe Card -->
+        <div class="col">
+          <div class="card h-100 text-bg-danger border-light">
+            <img
+              src="assets/images/delicacies/jd.jpg"
+              class="card-img-top"
+              alt="Card image"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">JD BakeryCafe</h5>
+              <p class="card-text">JD Bakery and Resto has long...</p>
+
+              <!-- Modal trigger part -->
+              <button
+                type="button"
+                class="btn btn-outline-light mt-auto align-self-start"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdropJd"
+              >
+                More...
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdropJd"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                  <div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+
+                    <div class="card text-bg-danger h-100 border-light">
+                      <img
+                        src="assets/images/delicacies/jd.jpg"
+                        class="card-img-top"
+                        alt="Card Image"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">JD BakeryCafe</h5>
+                        <p class="card-text">
+                          JD Bakery and Resto has long been a familiar name in
+                          Iloilo cuisine. It boasts of Ilonggo pastries like my
+                          fav Buko Royale and other cutee cakes. The fresh
+                          lumpia is a must-have everytime ww dine in and of
+                          course their new offering but my long-time Filipino
+                          snack ginataan. You can have it heated whether dine in
+                          or to-go. The place serves breakfast throughout the
+                          day (even in the evening), like rice with longanisa,
+                          tocino or bangus; different types of pasta dishes;
+                          all-time favorite fried chicken and palabok; cold and
+                          hot drinks; and, of course, pastries.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container text-center py-4">
+      <hr class="" />
+      <!-- Back to Top -->
+      <a href="#top-of-site" class="top-of-site-link" data-visible="true">
+        <!-- <span class="screen-reader-text">Back to Top</span> -->
+        <svg width="32" height="32" viewBox="0 0 100 100">
+          <path
+            fill="white"
+            d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"
+            data-darkreader-inline-fill=""
+            style="--darkreader-inline-fill: #e8e6e3"
+          ></path>
+        </svg>
+      </a>
+
+      <p class="pt-4 text-light">© Ronaldo Diamante 2022</p>
+    </footer>
+
+    <script src="/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

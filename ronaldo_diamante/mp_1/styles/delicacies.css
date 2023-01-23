@@ -1,0 +1,55 @@
+body {
+  background: linear-gradient(355deg, rgb(92, 0, 0), rgb(24, 26, 27));
+  /* background-repeat: no-repeat; */
+}
+
+.navbar a {
+  color: white;
+}
+
+.card {
+  box-shadow: 3px 3px 10px rgb(201, 200, 200);
+}
+
+.card img {
+  object-fit: cover;
+  object-position: center;
+  height: 20vh;
+  overflow: hidden;
+}
+
+.modal img {
+  height: 60vh;
+}
+
+/* Contact */
+#contact h2 {
+  font-weight: 500;
+}
+
+#contact label {
+  color: rgb(255, 255, 255);
+}
+
+#contact input,
+#contact textarea {
+  background-color: rgb(28, 30, 31);
+}
+
+#contact textarea {
+  height: 6rem;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  background-color: rgb(82, 82, 82);
+  color: rgb(255, 255, 255);
+}
+
+#contact h4 {
+  color: rgb(255, 255, 255);
+}
+
+#social img {
+  width: 2rem;
+}
